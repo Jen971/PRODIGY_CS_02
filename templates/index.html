@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Encryption Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Encryption & Decryption</h1>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul class="flash">
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        <form method="POST" enctype="multipart/form-data">
+            <label>Select Image:</label>
+            <input type="file" name="image" required><br>
+
+            <label>Enter Key (1-255):</label>
+            <input type="number" name="key" min="1" max="255" required><br>
+
+            <label>Select Mode:</label>
+            <select name="mode">
+                <option value="xor">XOR</option>
+                <option value="add">Addition</option>
+                <option value="multiply">Multiplication</option>
+            </select><br>
+
+            <button type="submit">Encrypt / Decrypt</button>
+        </form>
+    </div>
+</body>
+</html>

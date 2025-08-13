@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+
+        <div class="images">
+            <div>
+                <h3>Original Image</h3>
+                <img src="{{ original_image }}" width="300">
+            </div>
+            <div>
+                <h3>Encrypted / Decrypted Image</h3>
+                <img src="{{ result_image }}" width="300"><br>
+                <a href="{{ url_for('download_file', filename=result_filename) }}" class="button">Download Result</a>
+            </div>
+        </div>
+
+        <br><a href="/" class="button">Try Another Image</a>
+    </div>
+</body>
+</html>
