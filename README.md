@@ -49,3 +49,5 @@ pip install flask pillow numpy
 7. Screenshots
 https://github.com/Jen971/PRODIGY_CS_02/blob/7c37dc0dd8809cbf6f77966babc44cae224bdea7/task%202%20(!).png
 
+https://github.com/Jen971/PRODIGY_CS_02/blob/f77efbc39e564e93e7a7ec0a4ebcbdac1d9455f4/task%202%20(2).png
+
