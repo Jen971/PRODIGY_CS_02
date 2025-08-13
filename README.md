@@ -38,14 +38,14 @@ pip install flask pillow numpy
 
 
 5. /project-folder
-├── app.py            
+├── IMAGE MANIPULATION.py            
 ├── /uploads            # Stores uploaded and result images
 ├── /templates
 │   ├── index.html     
 │   └── result.html     
 └── /static
     └── style.css  
-6. Can view the result image(after encryption/decryption) after downloading it.
+7. Can view the result image(after encryption/decryption) after downloading it.
 
 ##Screenshots
 https://github.com/Jen971/PRODIGY_CS_02/blob/7c37dc0dd8809cbf6f77966babc44cae224bdea7/task%202%20(!).png
